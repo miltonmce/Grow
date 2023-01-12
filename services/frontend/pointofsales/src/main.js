@@ -5,6 +5,7 @@ import axios from 'axios';
 import App from './App.vue'
 import router from './router';
 import store from './store';
+import "bootstrap/dist/css/bootstrap.css";
 
 const app = createApp(App);
 
@@ -25,3 +26,5 @@ axios.interceptors.response.use(undefined, function (error) {
 app.use(router);
 app.use(store); 
 app.mount("#app"); 
+
+import "bootstrap/dist/js/bootstrap.js";

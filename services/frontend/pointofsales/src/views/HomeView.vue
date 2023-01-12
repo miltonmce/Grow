@@ -1,12 +1,5 @@
 <template>
-  <div class="main-content">
-  <aside style="background-color:aqua ;">
-    gsdg
-  </aside>
-  <main style="background-color: brown;">
-    fdgdf
-  </main>
-</div>
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda facilis dolore doloribus neque blanditiis exercitationem, delectus rem, cumque atque perspiciatis ab praesentium. Soluta amet modi officia nesciunt expedita voluptatem debitis.
 </template>
 <script>
 
@@ -14,8 +7,8 @@ import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'HomeView',
-  computed : {
-    isLoggedIn: function() {
+  computed: {
+    isLoggedIn: function () {
       return this.$store.getters.isAuthenticated;
     }
   },
@@ -23,7 +16,7 @@ export default defineComponent({
 </script>
 
 <style>
-.main-content{
+.main-content {
   display: flex;
 }
 </style>
