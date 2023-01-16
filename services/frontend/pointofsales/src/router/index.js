@@ -5,6 +5,7 @@ import RegisterView from '../views/RegisterView.vue';
 import LoginView from '../views/LoginView.vue';
 import DashboardView from '../views/DashboardView.vue';
 import ProfileView from '../views/ProfileView.vue';
+import ProductsView from '../views/ProductsView.vue';
 
 const routes = [
   {
@@ -12,6 +13,7 @@ const routes = [
     name: 'Home',
     component: HomeView
   },
+  
   {
     path: '/register',
     name: 'Register',
@@ -33,6 +35,13 @@ const routes = [
     name: 'Profile',
     component: ProfileView,
     meta: { requiresAuth: true },
+  },
+  {
+    path: '/products',
+    name: 'Products',
+    component: ProductsView,
+    meta: { requiresAuth: false },
+
   },
 
 ]
